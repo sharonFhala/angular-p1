@@ -10,14 +10,14 @@ import { ProdService } from 'src/app/services/prod.service';
   templateUrl: './baga.component.html',
   styleUrls: ['./baga.component.scss']
 })
-export class BagaComponent implements OnInit {
+export class BagaComponent  {
 
     
 
-  constructor(private prodSrv:ProdService) { }
-  ar: Product[]= this.prodSrv.getAll();
-  singleProd: Product = this.prodSrv.getSingleProd(1);
-  ngOnInit(): void {
-  }
+    constructor(private prdSr :ProdService){}
+//   ar: Product[]= this.prodSrv.getAll();
+//   singleProd: Product = this.prodSrv.getSingleProd(1);
+//   ngOnInit(): void {
+//  }
 
 }

@@ -1,1 +1,12 @@
 <p>waga works!</p>
+
+Desc: <input #product>
+Price: <input #price>
+
+<button (click)="add(product.value,+price.value)">Click me!</button>
+<ul >
+    <li *ngFor="let product of products">
+        <button (click)="delProd(product.id)"> del &nbsp; {{product.id}}</button>
+        {{product.product}}  {{product.price}}</li>
+    
+</ul>
