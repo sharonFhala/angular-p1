@@ -12,6 +12,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { ContactComponent } from './components/contact/contact.component';
 import {  HttpClientModule } from '@angular/common/http';
 import { DetComponent } from './components/det/det.component';
+import { NISPipe } from './pipes/nis.pipe';
+import { CapitalLettersPipe } from './pipes/capital-letters.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { DetComponent } from './components/det/det.component';
     MyNavComponent,
     ProductDetailsComponent,
     ContactComponent,
-    DetComponent
+    DetComponent,
+    NISPipe,
+    CapitalLettersPipe
   ],
   imports: [
     BrowserModule,

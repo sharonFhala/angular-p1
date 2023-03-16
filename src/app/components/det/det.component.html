@@ -5,7 +5,7 @@
     <!-- <button (click)="updProd(product.id,desc.value,+price.value)"> Update </button>
     &nbsp;
     <button (click)="delProd(product.id)"> del &nbsp; {{product.id}}</button> -->
-    &nbsp; {{myProduct?.product}}  {{myProduct?.price}}</li>
+    &nbsp; {{myProduct?.product| capitalLetters }}  {{myProduct?.price | nIS}}</li>
 
     <button (click)="setEdit()">Edit</button>
 
