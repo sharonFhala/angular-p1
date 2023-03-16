@@ -40,9 +40,11 @@ export class WagaComponent implements OnInit {
         this.prdSrv.delProd(id).subscribe(res => this.getProducts())
     }
 
-    updProd(id: number =0,product:string,price:number)
-    {
-        this.prdSrv.updProduct(id, {product,price}).subscribe(res => this.getProducts())
+    updProd(product: Product)
+    //(id: number =0,product:string,price:number)
+    { 
+        if(product)
+            this.prdSrv.updProduct(product.id?product.id:0, {product:product.product,price: product.price}).subscribe(res => this.getProducts())
 
     }
 

@@ -1,0 +1,16 @@
+
+
+
+<li >
+    <!-- <button (click)="updProd(product.id,desc.value,+price.value)"> Update </button>
+    &nbsp;
+    <button (click)="delProd(product.id)"> del &nbsp; {{product.id}}</button> -->
+    &nbsp; {{myProduct?.product}}  {{myProduct?.price}}</li>
+
+    <button (click)="setEdit()">Edit</button>
+
+    <div *ngIf="editFlag">
+        Desc: <input #desc [value]="myProduct?.product">
+        Price: <input #price [value]="myProduct?.price"> &nbsp;
+        <button (click)="update(desc.value, +price.value)">Save</button>
+    </div>

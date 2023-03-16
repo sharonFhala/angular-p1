@@ -1,8 +1,8 @@
 {
   "products": [
     {
-      "product": "bread",
-      "price": 10,
+      "product": "cotta",
+      "price": 6,
       "id": 1
     },
     {
@@ -14,6 +14,11 @@
       "product": "bal",
       "price": 5,
       "id": 21
+    },
+    {
+      "product": "boo",
+      "price": 3,
+      "id": 22
     }
   ]
 }

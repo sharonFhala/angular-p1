@@ -11,6 +11,7 @@ import { MyNavComponent } from './components/my-nav/my-nav.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {  HttpClientModule } from '@angular/common/http';
+import { DetComponent } from './components/det/det.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {  HttpClientModule } from '@angular/common/http';
     BagaComponent,
     MyNavComponent,
     ProductDetailsComponent,
-    ContactComponent
+    ContactComponent,
+    DetComponent
   ],
   imports: [
     BrowserModule,
