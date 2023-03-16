@@ -22,4 +22,7 @@ export class ProdService {
       {
         return this.myServ.delete<any>(this.MY_SERVER +"/"+ id)
       }
+      updProduct(id: number , prd: Product):Observable<any>{
+        return this.myServ.put<any>(this.MY_SERVER +"/"+ id, prd)
+      }
 }

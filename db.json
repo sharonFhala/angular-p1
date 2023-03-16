@@ -1,9 +1,9 @@
 {
   "products": [
     {
-      "id": 1,
-      "product": "json-server",
-      "price": 5
+      "product": "bread",
+      "price": 10,
+      "id": 1
     },
     {
       "product": "milk",

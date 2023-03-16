@@ -24,19 +24,26 @@ export class WagaComponent implements OnInit {
         this.prdSrv.getProducts().subscribe(res => this.products=res);
       }
 
-      addProduct(prod: Product)
-      {
-        this.prdSrv.addProduct(prod).subscribe(res => this.getProducts())
-      }
+    //   addProduct(prod: Product)
+    //   {
+    //     this.prdSrv.addProduct(prod).subscribe(res => this.getProducts())
+    //   }
 
       add(product:string,price:number)
     {
-        this.addProduct({product,price})
+        this.prdSrv.addProduct({product,price}).subscribe(res => this.getProducts())
+        //this.addProduct({product,price})
     }
 
     delProd(id: number =0)
     {
         this.prdSrv.delProd(id).subscribe(res => this.getProducts())
+    }
+
+    updProd(id: number =0,product:string,price:number)
+    {
+        this.prdSrv.updProduct(id, {product,price}).subscribe(res => this.getProducts())
+
     }
 
 }
